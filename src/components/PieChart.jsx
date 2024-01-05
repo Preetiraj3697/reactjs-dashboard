@@ -7,6 +7,21 @@ import arrow from '../assets/arrow.svg'
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
+const CustomTooltip = ({ active, payload}) => {
+  console.log(payload[0]);
+  if (active && payload && payload.length) {
+    return (
+      <div className="w-auto m-4 rounded-xl shadow border border-gray-200 bg-gray-100 p-8">
+        <p className="text-red-600">Supplier: {payload[0].payload.Supplier}</p>
+        <p className="text-yellow-600">Emissions-2023: {payload[0].value}</p>
+        <p className="text-green-600">Emissions-2022: {payload[0].payload['Emissions-2022']}</p>
+        <p className="text-blue-600">Revenue: {payload[0].payload.Revenue}</p>
+      </div>
+    );
+  }
+
+  return null;
+};
 const PieTable = () => {
  
     return (
@@ -38,6 +53,7 @@ const PieTable = () => {
           ))}
           
         </Pie>
+        <Tooltip content={<CustomTooltip />}/>
       </PieChart>
       </div>
     );

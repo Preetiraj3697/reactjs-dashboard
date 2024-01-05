@@ -1,8 +1,30 @@
-# React + Vite
+# GreenMentor Dashboard Assignment
+ `This is a Single page Simple Dashboard UI`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tech Stack
+ - React
+ - ReChart
+ - TailwindCss
+ - Vite
+  
+## we use this topic in this project
+ - props 
+ - state
+ - chart in react
+ - reuse component
+ - map() 
+  
+## Functionality
+ - Sidebar with drop-down menu
+ - BarChart legend on/off with toggle
+ - EMO Data show red when increase else show green color
+ - PieChart dynamic tooltip show when you hover
+ - dynamic data add in all chart and table
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ScreenShot
+ <img src="./src/assets/Home.png" alt="image1" />
+ <img src="./src/assets/Home-with-category.png" alt="image2" />
+ <img src="./src/assets/BarChartOffLegnd.png" alt="image3" />
+ <img src="./src/assets/BarChartWithOn.png" alt="image4" />
+ <img src="./src/assets/PieChartOff.png" alt="image5" />
+ <img src="./src/assets/PieChartOn.png" alt="image6" />
